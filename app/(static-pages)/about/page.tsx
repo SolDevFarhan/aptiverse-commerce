@@ -21,6 +21,16 @@ export default async function Page() {
       <Prose className="mb-8">
         <div>
           <p>
+            Aptiverse is a modern digital learning platform offering premium, self-paced online
+            courses in Web Development, Design, and Artificial Intelligence. Whether you're a
+            beginner looking to break into tech or a professional aiming to upskill, Aptiverse
+            provides expert-led content, real-world projects, and a seamless learning experience
+            accessible from anywhere. With a commitment to quality, clean design, and ease of
+            access, Aptiverse helps you master in-demand skills and stay ahead in the fast-evolving
+            digital landscape.
+          </p>
+          <br />
+          <p>
             <strong>1. Our Mission</strong>
             <br />
             Aptiverse.shop is committed to delivering high-quality online courses in Web
