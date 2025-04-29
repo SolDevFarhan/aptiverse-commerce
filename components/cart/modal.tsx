@@ -73,7 +73,7 @@ export default function CartModal() {
       settings: {
         displayMode: 'overlay',
         theme: 'dark',
-        successUrl: 'http://localhost:3001/success'
+        successUrl: process.env.NEXT_PUBLIC_URL
       }
     });
     setLoading(false);

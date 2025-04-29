@@ -8,25 +8,14 @@ export function WelcomeToast() {
     // ignore if screen height is too small
     if (window.innerHeight < 650) return;
     if (!document.cookie.includes('welcome-toast=2')) {
-      toast('🛍️ Welcome to Next.js Commerce!', {
+      toast('🛍️ Welcome to Aptiverse!', {
         id: 'welcome-toast',
         duration: Infinity,
         onDismiss: () => {
           document.cookie = 'welcome-toast=2; max-age=31536000; path=/';
         },
         description: (
-          <>
-            This is a high-performance, SSR storefront powered by Prodigy Commerce, Next.js, and
-            Vercel.{' '}
-            <a
-              href="https://github.com/prodigycommerce/nextjs-commerce"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-            >
-              Deploy your own
-            </a>
-            .
-          </>
+          <>We're excited to have you! Explore courses in Web Dev, Design & AI anytime.</>
         )
       });
     }
