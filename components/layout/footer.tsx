@@ -59,10 +59,10 @@ export default async function Footer() {
             &copy; {copyrightDate} {copyrightName}
             {copyrightName.length && !copyrightName.endsWith('.') ? '.' : ''} All rights reserved.
           </p>
-          <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
+          {/* <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
           <p>
             <a href="https://github.com/vercel/commerce">View the source</a>
-          </p>
+          </p> */}
           <p className="md:ml-auto">
             <a href="http://t.me/Dev_Farhan" className="text-black dark:text-white">
               Created by ▲ Dev Farhan
