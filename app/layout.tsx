@@ -21,6 +21,9 @@ export const metadata = {
     default: SITE_NAME!,
     template: `%s | ${SITE_NAME}`
   },
+  icons: {
+    icon: './icon.png'
+  },
   robots: {
     follow: true,
     index: true

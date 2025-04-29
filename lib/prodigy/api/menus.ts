@@ -1,6 +1,6 @@
 import { TAGS } from '../constants';
 import { prodigyFetch } from '../core';
-import { Menu, Page } from '../types';
+import { Menu } from '../types';
 
 export async function getMenu(handle: string): Promise<Menu[]> {
   if (handle === 'next-js-frontend-header-menu') {
@@ -38,8 +38,16 @@ export async function getMenu(handle: string): Promise<Menu[]> {
         path: '/about'
       },
       {
+        title: 'Privacy Policy',
+        path: '/privacy-policy'
+      },
+      {
         title: 'Terms & Conditions',
         path: '/terms-conditions'
+      },
+      {
+        title: 'Refund Policy',
+        path: '/refund-policy'
       }
     ];
   }

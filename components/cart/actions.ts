@@ -5,7 +5,6 @@ import { deleteCart } from 'lib/prodigy/api/cart';
 import { TAGS } from 'lib/prodigy/constants';
 import { revalidateTag } from 'next/cache';
 import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
 
 export async function addItem(prevState: any, selectedVariantId: string | undefined) {
   let cartId = (await cookies()).get('cartId')?.value;
@@ -114,7 +113,9 @@ export async function redirectToCheckout() {
     return 'Error fetching cart';
   }
 
-  redirect(cart.checkoutUrl);
+  return cart;
+
+  // redirect(cart.checkoutUrl);
 }
 
 // Prodigy API doesn't support creation of empty cart

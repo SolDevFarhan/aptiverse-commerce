@@ -4,10 +4,12 @@ import Prose from 'components/prose';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Prodigy Commerce storefront template for Vercel',
+  description:
+    'Aptiverse.shop is committed to delivering high-quality online courses in Web Development, Design, and AI. We aim to empower learners worldwide through accessible and affordable digital education.',
   openGraph: {
     title: 'About',
-    description: 'Prodigy Commerce storefront template for Vercel',
+    description:
+      'Aptiverse.shop is committed to delivering high-quality online courses in Web Development, Design, and AI. We aim to empower learners worldwide through accessible and affordable digital education.',
     type: 'article'
   }
 };
@@ -19,42 +21,50 @@ export default async function Page() {
       <Prose className="mb-8">
         <div>
           <p>
-            This website is built with{' '}
-            <a
-              href="https://github.com/prodigycommerce/nextjs-commerce"
-              title="Prodigy Next.js Commerce"
-            >
-              Prodigy Next.js Commerce
-            </a>
-            , which is a ecommerce template for creating a Prodigy Commerce storefront.&nbsp;
+            <strong>1. Our Mission</strong>
+            <br />
+            Aptiverse.shop is committed to delivering high-quality online courses in Web
+            Development, Design, and AI. We aim to empower learners worldwide through accessible and
+            affordable digital education.
           </p>
-          <p>Support for real-world commerce features including:&nbsp;</p>
-          <ul>
-            <li>Out of stocks</li>
-            <li>Cross variant / option availability (aka. Amazon style)</li>
-            <li>Hidden products</li>
-            <li>Dynamically driven content and features via Prodigy Commerce</li>
-            <li>
-              Seamless and secure checkout via{' '}
-              <a href="https://prodigycommerce.com" title="Prodigy Commerce">
-                Prodigy Commerce
-              </a>
-            </li>
-            <li>And more!</li>
-          </ul>
-          <p>This template also allows us to highlight newer Next.js features including:&nbsp;</p>
-          <ul>
-            <li>Next.js App Router</li>
-            <li>Optimized for SEO using Next.js's Metadata</li>
-            <li>React Server Components (RSCs) and Suspense</li>
-            <li>Server Actions&nbsp;for mutations</li>
-            <li>Edge runtime</li>
-            <li>New Next.js 13 fetching and caching paradigms</li>
-            <li>Dynamic OG images</li>
-            <li>Styling with Tailwind CSS</li>
-            <li>Automatic light/dark mode based on system settings</li>
-            <li>And more!</li>
-          </ul>
+
+          <p>
+            <strong>2. Our Location</strong>
+            <br />
+            Aptiverse is proudly based in Bangladesh, serving learners globally with premium digital
+            products.
+          </p>
+
+          <p>
+            <strong>3. Our Services</strong>
+            <br />
+            We specialize in providing downloadable online courses. Our platform is designed for a
+            smooth and secure learning experience, using Paddle as our trusted payment processor.
+          </p>
+
+          <p>
+            <strong>4. Contact Information</strong>
+            <br />
+            - General Inquiries: info@aptiverse.shop
+            <br />- Support Requests: support@aptiverse.shop
+          </p>
+
+          <p>
+            <strong>5. Legal Information</strong>
+            <br />
+            All purchases are subject to our Terms and Conditions, Privacy Policy, and Refund
+            Policy. By using our services, you agree to abide by them.
+          </p>
+
+          <p>
+            <strong>6. Stay Connected</strong>
+            <br />
+            For updates and announcements, visit our website at{' '}
+            <a href="https://aptiverse.shop" target="_blank" rel="noopener noreferrer">
+              aptiverse.shop
+            </a>
+            .
+          </p>
         </div>
       </Prose>
       <p className="text-sm italic">
@@ -62,7 +72,7 @@ export default async function Page() {
           year: 'numeric',
           month: 'long',
           day: 'numeric'
-        }).format(new Date('2024-09-25T11:14:47.455Z'))}.`}
+        }).format(new Date('2025-04-28T14:30:00.000Z'))}.`}
       </p>
     </>
   );

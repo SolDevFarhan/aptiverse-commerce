@@ -2,6 +2,7 @@
 
 import { Dialog, Transition } from '@headlessui/react';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { initializePaddle, Paddle } from '@paddle/paddle-js';
 import LoadingDots from 'components/loading-dots';
 import Price from 'components/price';
 import { DEFAULT_OPTION } from 'lib/prodigy/constants';
@@ -10,12 +11,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { useFormStatus } from 'react-dom';
-import { redirectToCheckout } from './actions';
 import { useCart } from './cart-context';
 import CloseCart from './close-cart';
 import { DeleteItemButton } from './delete-item-button';
 import { EditItemQuantityButton } from './edit-item-quantity-button';
 import OpenCart from './open-cart';
+import PADDLE_ID from './paddle-product.json';
 
 type MerchandiseSearchParams = {
   [key: string]: string;
@@ -27,6 +28,8 @@ export default function CartModal() {
   const quantityRef = useRef(cart?.totalQuantity);
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
+  const [paddle, setPaddle] = useState<Paddle>();
+  const [isLoading, setLoading] = useState<boolean>(false);
 
   // Prodigy API doesn't support creation of empty cart
   // useEffect(() => {
@@ -47,6 +50,34 @@ export default function CartModal() {
       quantityRef.current = cart?.totalQuantity;
     }
   }, [isOpen, cart?.totalQuantity, quantityRef]);
+
+  useEffect(() => {
+    initializePaddle({
+      environment: 'sandbox',
+      token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN!
+    }).then((paddle) => setPaddle(paddle));
+  }, []);
+
+  const handleCheckout = async () => {
+    if (!paddle) return alert('Paddle not initialized');
+    setLoading(true);
+
+    const response = await fetch('/api/cart');
+    const data = await response.json();
+    const productId = data.cart.lines[0].merchandise.product.id;
+    const Quantity = data.cart.lines[0].quantity;
+    const PriceId = PADDLE_ID[`${productId}` as keyof typeof PADDLE_ID];
+
+    paddle.Checkout.open({
+      items: [{ priceId: PriceId, quantity: Quantity }],
+      settings: {
+        displayMode: 'overlay',
+        theme: 'dark',
+        successUrl: 'http://localhost:3001/success'
+      }
+    });
+    setLoading(false);
+  };
 
   return (
     <>
@@ -197,9 +228,14 @@ export default function CartModal() {
                       />
                     </div>
                   </div>
-                  <form action={redirectToCheckout}>
-                    <CheckoutButton />
-                  </form>
+
+                  <button
+                    className="block w-full rounded-full bg-blue-600 p-3 text-center text-sm font-medium text-white opacity-90 hover:opacity-100"
+                    onClick={handleCheckout}
+                    disabled={isLoading}
+                  >
+                    {isLoading ? <LoadingDots className="bg-white" /> : 'Proceed to Checkout'}
+                  </button>
                 </div>
               )}
             </Dialog.Panel>
@@ -216,7 +252,6 @@ function CheckoutButton() {
   return (
     <button
       className="block w-full rounded-full bg-blue-600 p-3 text-center text-sm font-medium text-white opacity-90 hover:opacity-100"
-      type="submit"
       disabled={pending}
     >
       {pending ? <LoadingDots className="bg-white" /> : 'Proceed to Checkout'}
