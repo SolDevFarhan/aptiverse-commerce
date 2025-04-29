@@ -23,8 +23,7 @@ export default async function Page() {
         <p>
           <strong>1. Introduction</strong>
           <br />
-          Aptiverse ("we", "us", "our") operates the website aptiverse.xyz and is committed to
-          protecting your privacy.
+          We operates the website aptiverse.shop and is committed to protecting your privacy.
         </p>
 
         <p>

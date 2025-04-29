@@ -31,6 +31,20 @@ export default async function Page() {
           </p>
           <br />
           <p>
+            At Aptiverse, we're redefining online learning with high-quality, pre-recorded courses
+            in Web Development, Design, and Artificial Intelligence. Our content is carefully
+            crafted by industry professionals to help learners gain real-world skills — anytime,
+            anywhere.
+          </p>
+          <br />
+          <p>
+            We don’t do live classes or seminars. Instead, we focus on delivering on-demand video
+            lessons, allowing you to learn at your own pace and revisit content whenever needed.
+            Whether you're just starting out or looking to upskill, Aptiverse is your gateway to
+            mastering digital tools and technologies — all with a clean, user-friendly experience.
+          </p>
+          <br />
+          <p>
             <strong>1. Our Mission</strong>
             <br />
             Aptiverse.shop is committed to delivering high-quality online courses in Web
