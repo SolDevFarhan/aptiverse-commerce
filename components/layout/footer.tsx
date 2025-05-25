@@ -5,6 +5,7 @@ import LogoSquare from 'components/logo-square';
 import { getMenu } from 'lib/prodigy';
 import Image from 'next/image';
 import { Suspense } from 'react';
+import FbLogo from '../icons/facebook.png';
 import PaddleLogo from '../icons/paddle.png';
 
 const { COMPANY_NAME, SITE_NAME } = process.env;
@@ -44,12 +45,25 @@ export default async function Footer() {
             className="flex h-8 w-max flex-none items-center justify-center rounded-md border border-neutral-200 bg-white text-xs text-black dark:border-neutral-700 dark:bg-black dark:text-white"
             aria-label="Payments processed"
             href="https://www.paddle.com/"
+            target="_blank"
           >
             <span className="px-3">
               <Image src={PaddleLogo} height={20} width={20} alt="Prodigy Commerce logo" />
             </span>
             <hr className="h-full border-r border-neutral-200 dark:border-neutral-700" />
             <span className="px-3">Payments processed securely by Paddle.</span>
+          </a>
+          <a
+            className="flex h-8 w-max flex-none items-center justify-center rounded-md border border-neutral-200 bg-white text-xs text-black dark:border-neutral-700 dark:bg-black dark:text-white"
+            aria-label="social"
+            target="_blank"
+            href="https://www.facebook.com/aptiverse.shop/"
+          >
+            <span className="px-3">
+              <Image src={FbLogo} height={20} width={20} alt="facebook" />
+            </span>
+            <hr className="h-full border-r border-neutral-200 dark:border-neutral-700" />
+            <span className="px-3">Explore on facebook.</span>
           </a>
         </div>
       </div>
