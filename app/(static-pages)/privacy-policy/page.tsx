@@ -21,58 +21,24 @@ export default async function Page() {
       {/* <Prose className="mb-8" html={termsPageBody} /> */}
       <div className="mb-8">
         <p>
-          <strong>1. Introduction</strong>
-          <br />
-          We operates the website aptiverse.shop and is committed to protecting your privacy.
+          At Aptiverse, we respect your privacy and are committed to protecting your data. This
+          Privacy Policy outlines how we handle your information.
         </p>
-
+        <h2>1. Information We Collect</h2>
+        <ul>
+          <li>Your name, email, and billing information</li>
+          <li>Technical data like IP, browser type, and device</li>
+        </ul>
+        <h2>2. Use of Information</h2>
+        <p>We use your data to process orders, provide support, and improve our site.</p>
+        <h2>3. Sharing</h2>
         <p>
-          <strong>2. Information We Collect</strong>
-          <br />
-          - Personal Information: name, email address, billing information.
-          <br />- Non-Personal Information: browser type, IP address, device info via cookies.
+          We never sell your information. Payments are processed via trusted third-party gateways.
         </p>
-
-        <p>
-          <strong>3. How We Use Your Information</strong>
-          <br />
-          - To process payments and deliver courses.
-          <br />
-          - To send order updates and customer service messages.
-          <br />
-          - To improve our website and services.
-          <br />- To comply with legal obligations.
-        </p>
-
-        <p>
-          <strong>4. Payment Processing</strong>
-          <br />
-          Payments are processed securely through Paddle. We do not store your payment details.
-        </p>
-
-        <p>
-          <strong>5. Data Protection</strong>
-          <br />
-          We implement security measures but cannot guarantee 100% security.
-        </p>
-
-        <p>
-          <strong>6. Your Rights</strong>
-          <br />
-          Contact us at support@aptiverse.shop to access, correct, or delete your data.
-        </p>
-
-        <p>
-          <strong>7. Changes to this Policy</strong>
-          <br />
-          Updates will be posted on this page.
-        </p>
-
-        <p>
-          <strong>8. Contact Us</strong>
-          <br />
-          Email: support@aptiverse.shop
-        </p>
+        <h2>4. Data Security</h2>
+        <p>We use secure protocols to keep your data safe.</p>
+        <h2>5. Contact</h2>
+        <p>Email us at support@aptiverse.shop for any privacy concerns.</p>
       </div>
       <p className="text-sm italic">
         {`This document was last updated on ${new Intl.DateTimeFormat(undefined, {

@@ -5,11 +5,11 @@ import Prose from 'components/prose';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Aptiverse.shop is committed to delivering high-quality online courses in Web Development, Design, and AI. We aim to empower learners worldwide through accessible and affordable digital education.',
+    'Aptiverse is a digital marketplace offering high-quality HTML, WordPress, CMS, and eCommerce templates for developers, marketers, and bloggers. All themes are downloadable instantly, with a clean and professional design focus.',
   openGraph: {
     title: 'About',
     description:
-      'Aptiverse.shop is committed to delivering high-quality online courses in Web Development, Design, and AI. We aim to empower learners worldwide through accessible and affordable digital education.',
+      'Aptiverse is a digital marketplace offering high-quality HTML, WordPress, CMS, and eCommerce templates for developers, marketers, and bloggers. All themes are downloadable instantly, with a clean and professional design focus.',
     type: 'article'
   }
 };
@@ -21,73 +21,26 @@ export default async function Page() {
       <Prose className="mb-8">
         <div>
           <p>
-            Aptiverse is a modern digital learning platform offering premium, self-paced online
-            courses in Web Development, Design, and Artificial Intelligence. Whether you're a
-            beginner looking to break into tech or a professional aiming to upskill, Aptiverse
-            provides expert-led content, real-world projects, and a seamless learning experience
-            accessible from anywhere. With a commitment to quality, clean design, and ease of
-            access, Aptiverse helps you master in-demand skills and stay ahead in the fast-evolving
-            digital landscape.
+            Welcome to <strong>Aptiverse.shop</strong> – your go-to destination for premium digital
+            templates. We’re based in Bangladesh and specialize in providing high-quality:
           </p>
-          <br />
+          <ul>
+            <li>HTML & WordPress Themes</li>
+            <li>eCommerce & Marketing Templates</li>
+            <li>CMS & Blogging Templates</li>
+          </ul>
           <p>
-            At Aptiverse, we're redefining online learning with high-quality, pre-recorded courses
-            in Web Development, Design, and Artificial Intelligence. Our content is carefully
-            crafted by industry professionals to help learners gain real-world skills — anytime,
-            anywhere.
+            All products are pre-designed and downloadable instantly — no live classes or seminars.
+            Just ready-to-use templates to help you launch fast.
           </p>
-          <br />
           <p>
-            We don’t do live classes or seminars. Instead, we focus on delivering on-demand video
-            lessons, allowing you to learn at your own pace and revisit content whenever needed.
-            Whether you're just starting out or looking to upskill, Aptiverse is your gateway to
-            mastering digital tools and technologies — all with a clean, user-friendly experience.
-          </p>
-          <br />
-          <p>
-            <strong>1. Our Mission</strong>
+            <strong>Contact:</strong>
             <br />
-            Aptiverse.shop is committed to delivering high-quality online courses in Web
-            Development, Design, and AI. We aim to empower learners worldwide through accessible and
-            affordable digital education.
-          </p>
-
-          <p>
-            <strong>2. Our Location</strong>
+            📍 Bangladesh
             <br />
-            Aptiverse is proudly based in Bangladesh, serving learners globally with premium digital
-            products.
-          </p>
-
-          <p>
-            <strong>3. Our Services</strong>
+            ✉️ info@aptiverse.shop
             <br />
-            We specialize in providing downloadable online courses. Our platform is designed for a
-            smooth and secure learning experience, using Paddle as our trusted payment processor.
-          </p>
-
-          <p>
-            <strong>4. Contact Information</strong>
-            <br />
-            - General Inquiries: info@aptiverse.shop
-            <br />- Support Requests: support@aptiverse.shop
-          </p>
-
-          <p>
-            <strong>5. Legal Information</strong>
-            <br />
-            All purchases are subject to our Terms and Conditions, Privacy Policy, and Refund
-            Policy. By using our services, you agree to abide by them.
-          </p>
-
-          <p>
-            <strong>6. Stay Connected</strong>
-            <br />
-            For updates and announcements, visit our website at{' '}
-            <a href="https://aptiverse.shop" target="_blank" rel="noopener noreferrer">
-              aptiverse.shop
-            </a>
-            .
+            📧 support@aptiverse.shop
           </p>
         </div>
       </Prose>

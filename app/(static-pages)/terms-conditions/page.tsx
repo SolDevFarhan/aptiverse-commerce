@@ -20,62 +20,28 @@ export default async function Page() {
       <h1 className="mb-8 text-5xl font-bold">Terms & Conditions</h1>
       {/* <Prose className="mb-8" html={termsPageBody} /> */}
       <div className="mb-8">
+        <h2>1. Acceptance</h2>
         <p>
-          <strong>1. General</strong>
-          <br />
-          By using Aptiverse, you agree to these Terms. If you do not agree, please discontinue use.
+          By using Aptiverse, you agree to these terms. If you disagree, please do not use the site.
         </p>
-
+        <h2>2. Product Usage</h2>
         <p>
-          <strong>2. Intellectual Property</strong>
-          <br />
-          All course materials and site content are owned by Aptiverse. You may not reproduce or
-          distribute without permission.
+          All our products are digital and for personal or commercial use only — resale is
+          prohibited.
         </p>
-
+        <h2>3. Account Responsibility</h2>
+        <ul>
+          <li>Provide accurate information</li>
+          <li>Keep login credentials secure</li>
+          <li>Report any unauthorized use</li>
+        </ul>
+        <h2>4. Payments</h2>
         <p>
-          <strong>3. Purchases and Payment</strong>
-          <br />
-          All payments are processed through Paddle. Prices are in USD or Bangladeshi Taka (BDT);
-          currency conversion fees may apply.
+          All transactions are handled securely through third-party payment providers. Prices are in
+          USD or BDT.
         </p>
-
-        <p>
-          <strong>4. Delivery</strong>
-          <br />
-          Courses are delivered electronically after successful payment via email or site account
-          access.
-        </p>
-
-        <p>
-          <strong>5. Refund Policy</strong>
-          <br />
-          No refunds are provided after a course has been accessed or downloaded.
-        </p>
-
-        <p>
-          <strong>6. Disclaimer</strong>
-          <br />
-          Courses are provided "as is" without warranties of any kind.
-        </p>
-
-        <p>
-          <strong>7. Limitation of Liability</strong>
-          <br />
-          Aptiverse is not liable for damages resulting from the use of our products.
-        </p>
-
-        <p>
-          <strong>8. Governing Law</strong>
-          <br />
-          These Terms are governed by the laws of Bangladesh.
-        </p>
-
-        <p>
-          <strong>9. Contact Us</strong>
-          <br />
-          Email: support@aptiverse.shop
-        </p>
+        <h2>5. Intellectual Property</h2>
+        <p>All content and templates are owned by Aptiverse and protected under copyright law.</p>
       </div>
       <p className="text-sm italic">
         {`This document was last updated on ${new Intl.DateTimeFormat(undefined, {

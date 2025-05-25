@@ -21,30 +21,17 @@ export default async function Page() {
       {/* <Prose className="mb-8" html={termsPageBody} /> */}
       <div className="mb-8">
         <p>
-          <strong>1. Digital Products</strong>
-          <br />
-          Aptiverse offers digital courses delivered electronically. Once accessed or downloaded,
-          the product is considered "used."
+          Due to the nature of digital goods, all sales are generally final. However, we offer
+          refunds under specific conditions:
         </p>
-
+        <h2>Eligible Refund Cases</h2>
+        <ul>
+          <li>The product is corrupted or broken beyond use</li>
+          <li>You have not yet downloaded the item and request a refund within 24 hours</li>
+        </ul>
         <p>
-          <strong>2. No Refunds After Access</strong>
-          <br />
-          We do not offer refunds once access to a course has been provided. By purchasing, you
-          agree to this policy.
-        </p>
-
-        <p>
-          <strong>3. Exceptional Cases</strong>
-          <br />
-          If you believe you were incorrectly charged or faced technical access issues, contact
-          support@aptiverse.shop within 3 days of purchase.
-        </p>
-
-        <p>
-          <strong>4. Contact for Support</strong>
-          <br />
-          Email: support@aptiverse.shop
+          To request a refund, please contact us at <strong>support@aptiverse.shop</strong> with
+          your order ID.
         </p>
       </div>
       <p className="text-sm italic">
