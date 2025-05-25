@@ -6,7 +6,6 @@ import { getMenu } from 'lib/prodigy';
 import Image from 'next/image';
 import { Suspense } from 'react';
 import FbLogo from '../icons/facebook.png';
-import PaddleLogo from '../icons/paddle.png';
 
 const { COMPANY_NAME, SITE_NAME } = process.env;
 
@@ -41,7 +40,7 @@ export default async function Footer() {
           <FooterMenu menu={menu} />
         </Suspense>
         <div className="md:ml-auto">
-          <a
+          {/* <a
             className="flex h-8 w-max flex-none items-center justify-center rounded-md border border-neutral-200 bg-white text-xs text-black dark:border-neutral-700 dark:bg-black dark:text-white"
             aria-label="Payments processed"
             href="https://www.paddle.com/"
@@ -52,7 +51,7 @@ export default async function Footer() {
             </span>
             <hr className="h-full border-r border-neutral-200 dark:border-neutral-700" />
             <span className="px-3">Payments processed securely by Paddle.</span>
-          </a>
+          </a> */}
           <a
             className="flex h-8 w-max flex-none items-center justify-center rounded-md border border-neutral-200 bg-white text-xs text-black dark:border-neutral-700 dark:bg-black dark:text-white"
             aria-label="social"
