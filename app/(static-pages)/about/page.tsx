@@ -21,17 +21,12 @@ export default async function Page() {
       <Prose className="mb-8">
         <div>
           <p>
-            Welcome to <strong>Aptiverse.shop</strong> – your go-to destination for premium digital
-            templates. We’re based in Bangladesh and specialize in providing high-quality:
-          </p>
-          <ul>
-            <li>HTML & WordPress Themes</li>
-            <li>eCommerce & Marketing Templates</li>
-            <li>CMS & Blogging Templates</li>
-          </ul>
-          <p>
-            All products are pre-designed and downloadable instantly — no live classes or seminars.
-            Just ready-to-use templates to help you launch fast.
+            Welcome to Aptiverse — your Web3 development partner and digital product studio. We're
+            based in Bangladesh and focused on building innovative blockchain-related solutions such
+            as NFT minting platforms, token bridges (Hyperlane, LayerZero), and infrastructure
+            tools. We also offer sleek HTML templates and UI kits crafted for Web3 startups. Our
+            mission is to empower global developers and creators with production-ready tools and
+            exceptional support.
           </p>
           <p>
             <strong>Contact:</strong>

@@ -48,6 +48,10 @@ export async function getMenu(handle: string): Promise<Menu[]> {
       {
         title: 'Refund Policy',
         path: '/refund-policy'
+      },
+      {
+        title: 'How It Works',
+        path: '/how-it-works'
       }
     ];
   }

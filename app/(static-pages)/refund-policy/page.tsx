@@ -25,7 +25,7 @@ export default async function Page() {
           refunds under specific conditions:
         </p>
         <h2>Eligible Refund Cases</h2>
-        <ul>
+        <ul className="my-5 list-disc pl-8">
           <li>The product is corrupted or broken beyond use</li>
           <li>You have not yet downloaded the item and request a refund within 24 hours</li>
         </ul>
